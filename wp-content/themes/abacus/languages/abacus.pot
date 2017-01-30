@@ -1,0 +1,516 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Abacus\n"
+"POT-Creation-Date: 2016-09-28 12:56-0400\n"
+"PO-Revision-Date: 2016-09-28 12:56-0400\n"
+"Last-Translator: c.bavota <cbavota@gmail.com>\n"
+"Language-Team: c.bavota <cbavota@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.9\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:17
+msgid "It looks like nothing was found at this location. Perhaps try a search?"
+msgstr ""
+
+#: comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:45
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:46
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:47
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:57
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:19
+#, php-format
+msgid "%s Close"
+msgstr ""
+
+#: footer.php:28
+#, php-format
+msgid "Copyright &copy; %1$s %2$s. All Rights Reserved."
+msgstr ""
+
+#: footer.php:30
+#, php-format
+msgid "The %1$s Theme by %2$s."
+msgstr ""
+
+#: functions.php:78
+msgid "Top Menu"
+msgstr ""
+
+#: functions.php:79
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:149
+msgctxt "Roboto font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:157
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr ""
+
+#: functions.php:180
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:182
+msgid "This section appears on the right of the main content on every page."
+msgstr ""
+
+#: functions.php:190
+msgid "Jumbo Headline"
+msgstr ""
+
+#: functions.php:192
+msgid ""
+"This section appears on the front page in the centre of the header image. "
+"Designed specifically for one Text widget. "
+msgstr ""
+
+#: functions.php:201
+msgid "Shop Categories"
+msgstr ""
+
+#: functions.php:203
+msgid ""
+"This section appears on the Front Page template below the featured section. "
+"Designed specifically for three widgets. "
+msgstr ""
+
+#: functions.php:211
+msgid "Shop Banner"
+msgstr ""
+
+#: functions.php:213
+msgid ""
+"This section appears on the Front Page template above the trending section. "
+"Designed specifically for one widget. "
+msgstr ""
+
+#: header.php:63
+msgid "Main menu"
+msgstr ""
+
+#: header.php:72
+msgid "Menu"
+msgstr ""
+
+#: header.php:88
+msgid "Skip to content"
+msgstr ""
+
+#: inc/about.php:23
+#, php-format
+msgid "Welcome to %1$s %2$s"
+msgstr ""
+
+#: inc/about.php:23
+#, php-format
+msgid "%s Theme Info"
+msgstr ""
+
+#: inc/about.php:39
+#, php-format
+msgid ""
+"Enjoy the flexible design and efficient codebase that %1$s provides. Be sure "
+"to %2$scheck out the demo%3$s to see some of the possibilities."
+msgstr ""
+
+#: inc/about.php:48
+msgid "Enhance Your Website"
+msgstr ""
+
+#: inc/about.php:49
+#, php-format
+msgid ""
+"Upgrading %s with the ABC Premium Features plugin will unlock the following "
+"options to help you improve your site&rsquo;s look and functionality."
+msgstr ""
+
+#: inc/about.php:56
+msgid "Custom Colors"
+msgstr ""
+
+#: inc/about.php:58
+msgid ""
+"Why settle on one color when you can choose from any color imaginable. With "
+"the Custom Color plugin, you have the ability to set different colors for "
+"text elements, page backgrounds and more."
+msgstr ""
+
+#: inc/about.php:64
+msgid "Fonts Manager"
+msgstr ""
+
+#: inc/about.php:66
+msgid ""
+"A font can say a lot about a site, so why not test out a few to see which "
+"one might work better. With our Font Manager plugin, you can easily pick "
+"from over 600 Google Fonts or even set up Typekit."
+msgstr ""
+
+#: inc/about.php:72
+msgid "Custom Footer"
+msgstr ""
+
+#: inc/about.php:74
+msgid ""
+"Sometimes you need a little bit more space in your footer for widgets. With "
+"this plugin, you can add up to six columns above the footer and even "
+"customize the text in your footer notice."
+msgstr ""
+
+#: inc/about.php:80
+msgid "Social Icons"
+msgstr ""
+
+#: inc/about.php:82
+msgid ""
+"Being socially active online is a must for any business. That&rsquo;s why we "
+"created the ABC Social Icons premium plugin. Now you can direct any of your "
+"visitors to the social networks you use so they can stay up to date."
+msgstr ""
+
+#: inc/about.php:88
+#, php-format
+msgid ""
+"Want more? Take a look at alphabetthemes.com to see what options are "
+"available when you upgrade. %1$sUpgrade now &rarr;%2$s"
+msgstr ""
+
+#: inc/about.php:95
+msgid "View Documentation"
+msgstr ""
+
+#: inc/about.php:96
+#, php-format
+msgid ""
+"You can read detailed information on how to use %s&rsquo;s features in our "
+"online documentation section."
+msgstr ""
+
+#: inc/about.php:97
+msgid "View documentation &rarr;"
+msgstr ""
+
+#: inc/about.php:105
+msgid "Install Free Plugins"
+msgstr ""
+
+#: inc/about.php:106
+#, php-format
+msgid "Check out some available free plugins that work with %s."
+msgstr ""
+
+#: inc/about.php:109
+msgid "ABC Responsive Videos"
+msgstr ""
+
+#: inc/about.php:112
+msgid "Jetpack by WordPress.com"
+msgstr ""
+
+#: inc/about.php:118
+msgid "Need Support?"
+msgstr ""
+
+#: inc/about.php:119
+#, php-format
+msgid ""
+"If you&rsquo;ve purchased a license from Alphabet Themes, you can access our "
+"%1$ssupport form%2$s to ask any questions you might have about one of our "
+"themes or plugins."
+msgstr ""
+
+#: inc/about.php:121
+#, php-format
+msgid "Are you enjoying %s?"
+msgstr ""
+
+#: inc/about.php:122
+#, php-format
+msgid ""
+"Why not leave a review on %1$sWordPress.org%2$s? We&rsquo;d really "
+"appreciate it! %3$s"
+msgstr ""
+
+#: inc/customizer.php:12
+msgid "Continue reading"
+msgstr ""
+
+#: inc/customizer.php:13
+msgid "Featured product description text"
+msgstr ""
+
+#: inc/customizer.php:14
+msgid "Popular product description text"
+msgstr ""
+
+#: inc/customizer.php:23 inc/customizer.php:125
+msgid "Reset"
+msgstr ""
+
+#: inc/customizer.php:81
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer.php:91
+msgid "Read More text"
+msgstr ""
+
+#: inc/customizer.php:103
+msgid "Featured product description"
+msgstr ""
+
+#: inc/customizer.php:104 inc/customizer.php:117
+msgid "Only on shop grid template"
+msgstr ""
+
+#: inc/customizer.php:116
+msgid "Popular product description"
+msgstr ""
+
+#: inc/customizer.php:137
+msgid "Click on the button below to reset all theme options back to default."
+msgstr ""
+
+#: inc/customizer.php:146
+msgid "Unlock Premium Theme Options"
+msgstr ""
+
+#: inc/customizer.php:159
+msgid "Are you sure?"
+msgstr ""
+
+#: inc/template-tags.php:26
+#, php-format
+msgid "Welcome, %s"
+msgstr ""
+
+#: inc/template-tags.php:27
+msgid "Logout"
+msgstr ""
+
+#: inc/template-tags.php:29
+msgid "Login <span>or</span> Register"
+msgstr ""
+
+#: inc/template-tags.php:29
+msgid "Login"
+msgstr ""
+
+#: inc/template-tags.php:48
+msgid "Shop"
+msgstr ""
+
+#: inc/template-tags.php:50
+msgid "My Account"
+msgstr ""
+
+#: inc/template-tags.php:68
+#, php-format
+msgid ""
+"<span class=\"pull-left\">%1$s</span><span class=\"displaying pull-right\">"
+"%2$s of %3$s results for \"%4$s\"</span>"
+msgstr ""
+
+#: inc/template-tags.php:84
+msgid "All results &rarr;"
+msgstr ""
+
+#: inc/template-tags.php:84
+#, php-format
+msgid "Next %s results &rarr;"
+msgstr ""
+
+#: inc/template-tags.php:90
+#, php-format
+msgid "&larr; Previous %s results"
+msgstr ""
+
+#: inc/template-tags.php:95
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags.php:110
+#, php-format
+msgid "%s words"
+msgstr ""
+
+#: inc/woocommerce.php:40
+msgid "Proceed to Checkout"
+msgstr ""
+
+#: inc/woocommerce.php:52
+msgid "View your shopping cart"
+msgstr ""
+
+#: inc/woocommerce.php:53
+#, php-format
+msgid "%d Item"
+msgid_plural "%d Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/woocommerce.php:62
+msgid "Place order"
+msgstr ""
+
+#: page-templates/template-shop-grid.php:33
+msgid "Featured"
+msgstr ""
+
+#: page-templates/template-shop-grid.php:67
+msgid "Trending"
+msgstr ""
+
+#: page-templates/template-shop-grid.php:97
+msgid "Reviews"
+msgstr ""
+
+#: single.php:26
+msgid "Next Post"
+msgstr ""
+
+#: single.php:27
+msgid "Next post:"
+msgstr ""
+
+#: single.php:29
+msgid "Previous Post"
+msgstr ""
+
+#: single.php:30
+msgid "Previous post:"
+msgstr ""
+
+#: template-parts/content-author-bio.php:24
+msgid "Author"
+msgstr ""
+
+#: template-parts/content-author-bio.php:34
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: template-parts/content-footer.php:14
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-footer.php:18
+msgid "Page"
+msgstr ""
+
+#: template-parts/content-footer.php:22
+msgid "Tags:"
+msgstr ""
+
+#: template-parts/content-footer.php:24
+msgid "Edit"
+msgstr ""
+
+#: template-parts/content-header.php:39
+#, php-format
+msgid "Written by %s"
+msgstr ""
+
+#: template-parts/content-header.php:39
+#, php-format
+msgid "Posts by %s"
+msgstr ""
+
+#: template-parts/content-header.php:50
+msgid "0 Comments"
+msgstr ""
+
+#: template-parts/content-header.php:50
+msgid "1 Comment"
+msgstr ""
+
+#: template-parts/content-header.php:50
+msgid "% Comments"
+msgstr ""
+
+#: template-parts/content-none.php:11
+msgid "Nothing found"
+msgstr ""
+
+#: template-parts/content-none.php:16
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:20
+msgid ""
+"Sorry, but no posts matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:25
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Abacus"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://alphabetthemes.com/downloads/abacus-wordpress-theme/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Simplify your site with Abacus, an elegant theme specifically built for "
+"WooCommerce. Display your products using the included Shop Grid page "
+"template. Install Jetpack to add testimonials and more. With tons of "
+"possibilities, no two layouts are the same. Designed to look great on "
+"desktop browsers, tablets and handheld devices. For a live demo go to http://"
+"demos.alphabetthemes.com/?theme=abacus."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Alphabet Themes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://alphabetthemes.com"
+msgstr ""

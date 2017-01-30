@@ -1,0 +1,27 @@
+.opt-form input
+{
+    width: 500px;
+}
+
+.opt-form input#istest
+{
+    width: inherit;
+}
+
+.opt-form textarea
+{
+    width: 500px;
+}
+
+.opt-form select
+{
+    width: 100px;
+}
+
+img.preloader
+{
+    display: block;
+    width: 256px;
+    height: 20px;
+    margin: 200px auto 0 auto;
+}

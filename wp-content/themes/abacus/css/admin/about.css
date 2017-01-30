@@ -1,0 +1,138 @@
+.about-wrap .theme-badge {
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+
+.theme-badge img {
+	border: 0;
+}
+
+.about-wrap .point-releases {
+	border: 0;
+	margin: 20px 0 0;
+}
+
+.slidebox {
+    position: relative;
+    min-width: 255px;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    background: #fff;
+    padding: 20px;
+	margin-top: 20px;
+}
+
+.slidebox h2 {
+	margin-top: 0;
+}
+
+.slidebox .desc {
+	margin-top: 0;
+}
+
+.slidebox .submit {
+	padding-bottom: 0;
+}
+
+.feature-section.two-col .col {
+	margin-bottom: 30px;
+}
+
+.feature-section.three-col {
+	border: 0;
+}
+
+.feature-section.three-col h4.no-top {
+	margin-top: 0;
+}
+
+.plugin-title {
+	font-size: 30px;
+
+	max-width: 682px;
+	position: absolute;
+	left: 30px;
+	bottom: 20px;
+	padding: 8px 15px;
+	margin-bottom: 4px;
+
+	color: #fff;
+	background: rgba( 30, 30, 30, 0.9 );
+	text-shadow: 0 1px 3px rgba( 0, 0, 0, 0.4 );
+
+	-webkit-box-shadow: 0 0 30px rgba( 255, 255, 255, 0.1 );
+	-moz-box-shadow: 0 0 30px rgba( 255, 255, 255, 0.1 );
+	box-shadow: 0 0 30px rgba( 255, 255, 255, 0.1 );
+
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.media-container {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.about-wrap .want-more {
+	font-size: 1.2em;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	border-top: 1px solid rgba(0,0,0,0.1);
+	padding: 30px 125px 30px 0;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.about-wrap .want-more a {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	-ms-transform: translateY( -50% ) !important; /* IE 9 */
+   	-webkit-transform: translateY( -50% ) !important; /* Safari */
+    transform: translateY( -50% ) !important;
+}
+
+.about-wrap .feature-section {
+	padding: 0;
+	margin: 0;
+}
+
+@media only screen and (max-width: 782px) {
+	.about-wrap .theme-badge {
+		display: none;
+	}
+
+	.about-wrap .want-more {
+		padding: 20px 0;
+		text-align: center;
+	}
+
+	.about-wrap .want-more a {
+		position: static;
+		top: auto;
+		-ms-transform: none !important; /* IE 9 */
+	   	-webkit-transform: none !important; /* Safari */
+	    transform: none !important;
+	    display: table;
+	    margin: 15px auto;
+	}
+
+   .about-wrap .feature-section.two-col .col,
+   .about-wrap .headline-feature .feature-section .col,
+   .about-wrap .three-col .col {
+        width: 100%!important;
+        float: none!important;
+        padding-bottom: 0;
+        margin: 20px 0;
+    }
+
+    .about-wrap .two-col>div:last-child {
+	    border: 0;
+    }
+
+    .about-wrap .about-text {
+	    margin-right: 0;
+    }
+
+}

@@ -1,0 +1,39 @@
+/*
+ Theme Name:   Responsive Magazine
+ Theme URI:    http://themes4wp.com/theme/responsive-magazine/
+ Description:  Responsive Magazine is free WordPress theme excellent for a magazine, news, newspaper, review, blog or other editorial websites. Responsive Magazine is child theme of First Mag - free responsive magazine WordPress Theme. Theme support WP Review plugin, an easy and powerful way to review content with stars, percentages or points rating and includes homepage carousel. WooCommerce support is included. Responsive Magazine uses simple, clean flat design, is fully responsive and looks good on every device. Check the demo at http://demo.themes4wp.com/responsive-magazine/
+ Author:       Themes4WP
+ Author URI:   http://themes4wp.com/
+ Template:     first-mag
+ Version:      1.0.2
+ License:      GNU General Public License v3 or later
+ License URI:  http://www.gnu.org/licenses/gpl-3.0.html
+ Tags:         one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-menu, featured-images, theme-options, translation-ready
+ Text Domain:  responsive-magazine
+*/
+
+/* Homepage Carousel */
+#carousel-home .flex-caption .entry-summary {
+    line-height: 20px;
+}
+#carousel-home .flex-caption .home-header .page-header a, #carousel-home .home-header .page-header {
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+#carousel-home {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 0;
+    background-color: #fff;
+}
+.flex-meta i {
+    margin-right: 5px;
+}
+.flex-meta {
+    font-size: 12px;
+    opacity: 0.8;
+}
+#carousel-home .flex-caption .entry-summary, .flex-meta, .flex-meta a {
+    color: #fff;
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8"> <![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+
+    <link rel="apple-touch-icon" href="http://s.rbk.ru/v7_top_static/common/common-4.4.5/images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="40x40" href="http://s.rbk.ru/v7_top_static/common/common-4.4.5/images/apple-touch-icon-40x40.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="http://s.rbk.ru/v7_top_static/common/common-4.4.5/images/apple-touch-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="80x80" href="http://s.rbk.ru/v7_top_static/common/common-4.4.5/images/apple-touch-icon-80x80.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="http://s.rbk.ru/v7_top_static/common/common-4.4.5/images/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="http://s.rbk.ru/v7_top_static/common/common-4.4.5/images/apple-touch-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="http://s.rbk.ru/v7_top_static/common/common-4.4.5/images/apple-touch-icon-180x180.png"/>
+
+    <meta name="application-name" content="РБК"/>
+    <meta name="msapplication-tooltip" content="&quot;РосБизнесКонсалтинг&quot; - ведущая российская компания, работающая в сферах масс-медиа и информационных технологий."/>
+
+    <meta name="msapplication-TileColor" content="#00CEA6"/>
+    <meta name="msapplication-TileImage" content="http://s.rbk.ru/v7_top_static/common/common-4.4.5/images/msapplication-310x150.png"/>
+    <meta name="msapplication-square70x70logo" content="http://s.rbk.ru/v7_top_static/common/common-4.4.5/images/msapplication-70x70.png"/>
+    <meta name="msapplication-square150x150logo" content="http://s.rbk.ru/v7_top_static/common/common-4.4.5/images/msapplication-150x150.png"/>
+    <meta name="msapplication-square310x310logo" content="http://s.rbk.ru/v7_top_static/common/common-4.4.5/images/msapplication-310x310.png"/>
+    <meta name="msapplication-wide310x150logo" content="http://s.rbk.ru/v7_top_static/common/common-4.4.5/images/msapplication-310x150.png"/>
+
+        <title>404</title>
+
+    
+
+    <link rel="stylesheet" href="http://s.rbk.ru/v7_top_static/common/common-4.4.5/styles/build/_common.css"  media="screen"/>
+    <link rel="stylesheet" href="http://s.rbk.ru/v7_top_static/rbc7-4.2.17/styles/build/_main.css"  media="screen"/>
+
+    <script src="http://s.rbk.ru/v7_top_static/common/common-4.4.5/scripts/build/_common.js"></script>
+    <script>window.projectVersion = 'rbc7';</script>
+</head>
+<body>
+    <div class="l-window">
+        <div class="l-row">
+            <div class="topline js-sticky-block__topline fixed g-noprint">
+                                    <div class="topline__top js-topline"><div class="l-row topline__items-container js-topline-dropdown__items-container"><a class="topline__item topline__item_news-feed-handler js-news-feed-toggle__handler js-topline-dropdown_ignore js-topline-item"><span></span><span></span><span></span></a><a class="topline__item topline__item_logo js-topline-item" href="http://www.rbc.ru/"></a><span class="topline__region js-topline-item"><a class="topline__item js-regions-toggle__handler"><span class="js-region-current"><span class="topline__region-icon"></span></span></a></span><a href="http://tv.rbc.ru/?utm_source=topline" class="topline__item topline__item_important js-topline-item">Телеканал</a><a href="http://www.rbc.ru/newspaper/?utm_source=topline" class="topline__item topline__item_important js-topline-item">Газета</a><a href="http://www.rbc.ru/magazine/?utm_source=topline" class="topline__item topline__item_important js-topline-item">Журнал</a><a href="http://money.rbc.ru/?utm_source=topline" class="topline__item js-topline-item">Деньги</a><a href="http://quote.rbc.ru/?utm_source=topline" class="topline__item js-topline-item">Quote</a><a href="https://www.autonews.ru/?utm_source=topline" class="topline__item js-topline-item">Авто</a><a href="http://sport.rbc.ru/?utm_source=topline" class="topline__item js-topline-item">Спорт</a><a href="http://realty.rbc.ru/?utm_source=topline" class="topline__item js-topline-item">Недвижимость</a><a href="http://style.rbc.ru/?utm_source=topline" class="topline__item js-topline-item">Стиль</a><a href="http://awards.rbc.ru/nominees/" class="topline__item js-topline-item topline__item_special " data-pub="false">Премия РБК</a><a href="http://marketing.rbc.ru/?utm_source=topline" class="topline__item js-topline-item">Исследования</a><a href="http://biztorg.ru/offers/main?utm_source=topline" class="topline__item js-topline-item">Продажа бизнеса</a><a href="http://biztorg.ru/franchises/main?utm_source=topline" class="topline__item js-topline-item">Франшизы </a><a href="http://bc.rbc.ru/?utm_source=topline" class="topline__item js-topline-item">Конференции</a><a href="http://www.cnews.ru/?utm_source=topline" class="topline__item js-topline-item topline__item_cnews"><span>C</span><span class="topline__item_cnews__dot">&middot;</span><span>News</span></a></div><div style="white-space: nowrap; font-size: 0;"><span class="topline__dropdown"><a href="" class="topline__dropdown__handle js-topline-dropdown" style="display: none;">
+                    Еще<span class="topline__dropdown__triangle">&#9660;</span></a><span class="topline__dropdown__list js-topline-dropdown__list"></span></span><div class="topline__item__wrap"><a href="http://www.rbcplus.ru/?utm_source=topline" class="topline__item topline__item_special topline__item_rbcplus js-topline-item">РБК+</a><a href="http://r.rbc.ru/5r93IHsf2m8" class="topline__item topline__item_special">Здоровье</a></div></div><div class="topline__search__menu"><form  action="http://www.rbc.ru/search/" class="topline__search"><input type="hidden" name="project" value="rbcnews"/><span class="topline__search__link topline__search__menu__link js-search-link"></span><div class="topline__search__body"><input class="topline__search__buttom" type="submit"  value="НАЙТИ" /><div class="topline__search__text"><div class="topline__search__input-wrap"><input type="text" name="query" value="" placeholder="Поиск по сайту" /></div></div></div></form></div></div><div class="topline__region-submenu js-topline-sub js-regions-toggle"><div class="g-clear"></div><div class="topline__region-detector g-hidden js-region-detector"><span class="topline__region-detector__text"><span class="topline__region-icon"></span> Ваш регион <span class="topline__region-title js-region-detector-title"></span>, верно?</span><a href="#" class="topline__subitem js-region-detector-button" data-answer="yes">Да</a><a href="#" class="topline__subitem topline__subitem_last js-region-detector-button" data-answer="no">Нет</a></div><div class="topline__submenu"><div class="topline__submenu__conteiner js-topline-sub-dropdown__items-container"><a href="http://www.rbc.ru/" class="topline__subitem topline__subitem_first js-region-item js-topline-sub-item" data-id="world"><span class="topline__region-icon"></span> Весь мир</a><a href="//ufa.rbc.ru/" class="topline__subitem js-region-item js-topline-sub-item" data-id="ufa" data-cookie="russia/bashkortostan" data-title="Башкортостан" data-url="http://ufa.rbc.ru/">Башкортостан</a><a href="//vo.rbc.ru/" class="topline__subitem js-region-item js-topline-sub-item" data-id="vo" data-cookie="russia/vologodskaya_obl" data-title="Вологодская область" data-url="http://vo.rbc.ru/">Вологодская область</a><a href="//ekb.rbc.ru/" class="topline__subitem js-region-item js-topline-sub-item" data-id="ekb" data-cookie="russia/sverdlovskaya_obl" data-title="Екатеринбург" data-url="http://ekb.rbc.ru/">Екатеринбург</a><a href="//kaliningrad.rbc.ru/" class="topline__subitem js-region-item js-topline-sub-item" data-id="kaliningrad" data-cookie="russia/kaliningradskaya_obl" data-title="Калининград" data-url="http://kaliningrad.rbc.ru/">Калининград</a><a href="//kuban.rbc.ru/" class="topline__subitem js-region-item js-topline-sub-item" data-id="krasnodar" data-cookie="russia/krasnodarskiy_kray" data-title="Краснодарский край" data-url="http://kuban.rbc.ru/">Краснодарский край</a><a href="//nn.rbc.ru/" class="topline__subitem js-region-item js-topline-sub-item" data-id="nn" data-cookie="russia/nijegorodskaya_obl" data-title="Нижний Новгород" data-url="http://nn.rbc.ru/">Нижний Новгород</a><a href="//nsk.rbc.ru/" class="topline__subitem js-region-item js-topline-sub-item" data-id="nsk" data-cookie="russia_sfo" data-title="Новосибирск" data-url="http://nsk.rbc.ru/">Новосибирск</a><a href="//perm.rbc.ru/" class="topline__subitem js-region-item js-topline-sub-item" data-id="perm" data-cookie="russia/permskij_kraj" data-title="Пермский край" data-url="http://perm.rbc.ru/">Пермский край</a><a href="//rostov.rbc.ru/" class="topline__subitem js-region-item js-topline-sub-item" data-id="rostov" data-cookie="russia/rostovskaya_obl" data-title="Ростов-на-Дону" data-url="http://rostov.rbc.ru/">Ростов-на-Дону</a><a href="//www.rbc.ru/" class="topline__subitem js-region-item js-topline-sub-item" data-id="spb_sz" data-cookie="russia/sankt-peterburg_i_oblast" data-title="Санкт-Петербург и область" data-url="http://www.rbc.ru/">Санкт-Петербург и область</a><a href="//rt.rbc.ru/" class="topline__subitem js-region-item js-topline-sub-item" data-id="tatarstan" data-cookie="russia/tatarstan" data-title="Татарстан" data-url="http://rt.rbc.ru/">Татарстан</a><a href="//t.rbc.ru/" class="topline__subitem js-region-item js-topline-sub-item" data-id="tyumen" data-cookie="russia/tyumenskaya_obl" data-title="Тюмень" data-url="http://t.rbc.ru/">Тюмень</a><a href="//chr.rbc.ru/" class="topline__subitem js-region-item js-topline-sub-item" data-id="chr" data-cookie="russia_chernozemje" data-title="Черноземье" data-url="http://chr.rbc.ru/">Черноземье</a></div><div style="white-space: nowrap;"><span class="topline__submenu__dropdown"><a href="" class="topline__submenu__dropdown__handle js-topline-sub-dropdown" style="display: none;">
+                Еще<span class="topline__submenu__dropdown__triangle">&#9660;</span></a><span class="topline__submenu__dropdown__list js-topline-sub-dropdown__list"></span></span></div></div></div>
+                            </div>
+
+            <div class="l-window-body js-filter-lock-block">
+                <div class="js-rbcslider rbcslider static fullwidth">
+                    <div class="rbcslider__slide rbcslider__slide__without-border js-rbcslider-slide">
+                        <div class="error404">
+    <h1 class="error404__title">404</h1>
+    <div class="error404__message">Такой страницы не существует. Воспользуйтесь поиском <br>или посмотрите другие материалы</div>
+    <!-- form-->
+    <div class="error404__search">
+        <form action= "http://www.rbc.ru/search/">
+            <input class="error404__search-input" type="text" name="query" placeholder="Поиск по новостям">
+            <input class="error404__search-submit" type="submit" value="Найти">
+            <input type="hidden" name="utf" value="0"/>
+        </form>
+    </div>
+
+    <div class="l-row">
+                    <!-- main news -->
+            <div class="error404__news-left">
+                <h3 class="error404__title-col">Главные новости</h3>
+                <div class="error404__news">
+                                    <a href="http://www.rbc.ru/politics/30/01/2017/588f4fe99a79475310301db9" class="error404__news-item">
+                        <span class="error404__news-title">Иммиграционный указ Трампа повлиял на порядок выдачи виз россиянам</span>
+                        <span class="error404__news-date error404__news-date_after">17:45</span>
+                    </a>
+                                    <a href="http://www.rbc.ru/politics/30/01/2017/588f522a9a7947560e1d119e" class="error404__news-item">
+                        <span class="error404__news-title">В Кремле заявили о работе с Совбезом по защите Рунета от «интервенций»</span>
+                        <span class="error404__news-date error404__news-date_after">18:41</span>
+                    </a>
+                                    <a href="http://www.rbc.ru/politics/30/01/2017/588f2e709a79473600a9d453" class="error404__news-item">
+                        <span class="error404__news-title">Ирак проголосовал за ответные меры на иммиграционный указ Трампа</span>
+                        <span class="error404__news-date error404__news-date_after">15:26</span>
+                    </a>
+                                    <a href="http://www.rbc.ru/politics/30/01/2017/588f0bf79a7947168c758aff" class="error404__news-item">
+                        <span class="error404__news-title">Лавров раскрыл подробности разговора Владимира Путина и Дональда Трампа</span>
+                        <span class="error404__news-date error404__news-date_after">13:26</span>
+                    </a>
+                                    <a href="http://www.rbc.ru/politics/30/01/2017/588ee6e49a794705c5a944ae" class="error404__news-item">
+                        <span class="error404__news-title">СМИ узнали о возбуждении дела из-за попытки покушения на Кадырова</span>
+                        <span class="error404__news-date error404__news-date_after">11:26</span>
+                    </a>
+                                </div>
+            </div>
+        
+                    <!-- promo news -->
+            <div class="error404__news-left">
+                <h3 class="error404__title-col">Выбор редакции</h3>
+                <div class="error404__news">
+                                    <a href="http://www.rbc.ru/politics/30/01/2017/588b3fe29a794754e32039fe" class="error404__news-item">
+                        <span class="error404__news-title">В правительстве отказались снять запрет на въезд в Россию людей с ВИЧ</span>
+                        <span class="error404__news-date error404__news-date_after">09:01</span>
+                    </a>
+                                    <a href="http://www.rbc.ru/society/27/01/2017/588b16999a794737fc89e346" class="error404__news-item">
+                        <span class="error404__news-title">Хакер в погонах: чем прославился третий фигурант дела о госизмене в ФСБ</span>
+                        <span class="error404__news-date error404__news-date_after">27 янв, 16:41</span>
+                    </a>
+                                    <a href="http://www.rbc.ru/politics/30/01/2017/588f089b9a794715a930cd73" class="error404__news-item">
+                        <span class="error404__news-title">«Это жестоко и глупо»: что пишут СМИ об иммиграционном акте Трампа</span>
+                        <span class="error404__news-date error404__news-date_after">14:22</span>
+                    </a>
+                                    <a href="http://www.rbc.ru/finances/29/01/2017/588b75329a794700bfb4b77c" class="error404__news-item">
+                        <span class="error404__news-title">Страховщики столкнулись с максимальным уровнем выплат по ОСАГО</span>
+                        <span class="error404__news-date error404__news-date_after">Вчера, 17:13</span>
+                    </a>
+                                    <a href="http://www.rbc.ru/own_business/30/01/2017/588b20af9a79473e8cec2438" class="error404__news-item">
+                        <span class="error404__news-title">Зритель на сцене: как заработать на театре нового типа</span>
+                        <span class="error404__news-date error404__news-date_after">15:06</span>
+                    </a>
+                                </div>
+            </div>
+            </div>
+</div>
+
+                        <div class="js-rbcslider-footer">
+                            <div class="banner g-white" data-banner-id="new_news_bot_2"><a target="_top" href="http://banner.rbc.ru/banredir.cgi?lid=new_news_bot_2&_b=Media2/new_news_bot_2_DFP" empty="true" style="display:none"></a><!-- RBCNews_Filmstrip 1937 (new_news_bot_2) -->
+<div id='div-gpt-ad-1436366028349-0'>
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+  rbc_dfp.display('div-gpt-ad-1436366028349-0');
+});
+</script>
+</div></div>
+                            
+<div class="footer g-noprint">
+    <div class="footer__table">
+        <div class="footer__tr">
+            <div class="footer__td footer__td_50">
+                <div class="footer__list-item">
+                    <a href="http://www.rbcholding.ru/about.shtml" class="footer__link">О компании</a>
+                </div>
+                <div class="footer__list-item">
+                    <a href="http://www.rbc.ru/contacts/" class="footer__link">Контактная информация</a>
+                </div>
+                <div class="footer__list-item">
+                    <a href="http://www.rbc.ru/editors/" class="footer__link">Редакция</a>
+                </div>
+                <div class="footer__list-item last">
+                    <a href="http://rbc.ru/advert/" class="footer__link">Размещение рекламы</a>
+                </div>
+                            </div>
+
+            <div class="footer__td footer__td_75">
+    <div class="footer__list-item footer__header">Региональные версии</div>
+
+    <div class="footer__inner-table">
+                <div class="footer__td footer__td_30">
+                        <div class="footer__list-item"><a href="http://ufa.rbc.ru/ufa/" class="footer__link">Башкортостан</a></div>
+                        <div class="footer__list-item"><a href="http://kaliningrad.rbc.ru/kaliningrad/" class="footer__link">Калининград</a></div>
+                        <div class="footer__list-item"><a href="http://nsk.rbc.ru/nsk/" class="footer__link">Новосибирск</a></div>
+                        <div class="footer__list-item"><a href="http://www.rbc.ru/spb_sz/" class="footer__link">С.-Петербург</a></div>
+                        <div class="footer__list-item last"><a href="http://chr.rbc.ru/chr/" class="footer__link">Черноземье</a></div>
+                    </div>
+                <div class="footer__td footer__td_30">
+                        <div class="footer__list-item"><a href="http://vo.rbc.ru/vo/" class="footer__link">Вологда</a></div>
+                        <div class="footer__list-item"><a href="http://kuban.rbc.ru/krasnodar/" class="footer__link">Краснодар</a></div>
+                        <div class="footer__list-item"><a href="http://perm.rbc.ru/perm/" class="footer__link">Пермь</a></div>
+                        <div class="footer__list-item last"><a href="http://rt.rbc.ru/tatarstan/" class="footer__link">Татарстан</a></div>
+                    </div>
+                <div class="footer__td footer__td_30">
+                        <div class="footer__list-item"><a href="http://ekb.rbc.ru/ekb/" class="footer__link">Екатеринбург</a></div>
+                        <div class="footer__list-item"><a href="http://nn.rbc.ru/nn/" class="footer__link">Н.Новгород</a></div>
+                        <div class="footer__list-item"><a href="http://rostov.rbc.ru/rostov/" class="footer__link">Ростов-на-Дону</a></div>
+                        <div class="footer__list-item last"><a href="http://t.rbc.ru/tyumen/" class="footer__link">Тюмень</a></div>
+                    </div>
+            </div>
+</div>
+
+            <div class="footer__td footer__td_50">
+                <div class="footer__list-item footer__header">РБК в соцсетях</div>
+
+                <div class="footer__inner-table">
+                    <div class="footer__td footer__td_30">
+                        <div class="footer__list-item">
+                            <a href="http://facebook.com/rbcru" class="footer__link footer__fs">Facebook</a>
+                        </div>
+                        <div class="footer__list-item">
+                            <a href="https://vk.com/rbc" class="footer__link footer__vk">ВКонтакте</a>
+                        </div>
+                        <div class="footer__list-item last">
+                            <a href="http://twitter.com/ru_rbc" class="footer__link footer__tw">Twitter</a>
+                        </div>
+                    </div>
+
+                    <div class="footer__td footer__td_30">
+                        <div class="footer__list-item">
+                            <a href="http://www.odnoklassniki.ru/group/51670727852273" class="footer__link footer__odn">Одноклассники</a>
+                        </div>
+                        <div class="footer__list-item last">
+                            <a href="http://www.youtube.com/user/tvrbcnews" class="footer__link footer__yout">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__td footer__td_75 footer__td_last">
+                                    <div class="footer__list-item"><a href="/mobile/" class="footer__link footer__green js-footer-site-version">Мобильная версия сайта</a></div>
+                                                    <div class="footer__list-item">
+                        <a href="http://static.feed.rbc.ru/rbc/logical/footer/news.rss" class="footer__link">RSS</a>
+                    </div>
+                                <a href="https://app.rbc.ru/gpn/unsubscribe.html" class="footer__link js-popup-push-subscribe-button">Оповещения RBC.RU</a>            </div>
+
+        </div>
+    </div>
+
+            <div class="footer__table">
+            <div class="footer__tr">
+                <div class="footer__td">
+                    <div class="footer__inline-item footer__header">Другие продукты РБК</div>
+                    <div class="footer__inline-item">
+                        <a href="http://www.nic.ru/" class="footer__link">Домены и хостинг</a>
+                    </div>
+                    <div class="footer__inline-item">
+                        <a href="http://www.public.ru/" class="footer__link">Медиапоиск и анализ</a>
+                    </div>
+                    <div class="footer__inline-item">
+                        <a href="http://loveplanet.ru/" class="footer__link">Знакомства</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="footer__table">
+        <div class="footer__tr">
+            <div class="footer__td footer__td_50">
+                &copy;&nbsp;ЗАО&nbsp;&laquo;РОСБИЗНЕСКОНСАЛТИНГ&raquo;,
+                <nobr>1995–2017</nobr><br/>
+
+                <a href="mailto:letters@rbc.ru" class="footer__green">letters@rbc.ru</a>            </div>
+
+            <div class="footer__td footer__td_50">
+                Информация об&nbsp;ограничениях<br/>                &copy;&nbsp;<a href="http://www.rbc.ru/restrictions#reuters" class="footer__green" target="_blank">Reuters</a>, &copy;&nbsp;<a href="http://www.rbc.ru/restrictions#press" class="footer__green" target="_blank">AP</a>, &copy;&nbsp;<a href="http://www.rbc.ru/restrictions#interfax" class="footer__green" target="_blank">Интерфакс</a>            </div>
+
+                            <div class="footer__td footer__td_50 footer__td_min-16">
+                    <a href="http://www.rbc.ru/privacy/" class="footer__green">О&nbsp;соблюдении авторских&nbsp;прав</a>
+                </div>
+            
+            <div class="footer__td footer__td_50 footer__td_min-25">
+                Материалы с <span class="footer__star">отметкой</span><br/> публикуются на&nbsp;правах рекламы
+            </div>
+
+            <div class="footer__td footer__td_50 footer__td_last">
+                <span class="footer__copy18"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__table">
+        <div class="footer__tr">
+            <div class="footer__td footer__td_50 footer__gray">
+                Сообщения и&nbsp;материалы информационного агентства &laquo;РБК&raquo; (зарегистрировано Федеральной службой по надзору в&nbsp;сфере связи, информационных технологий и&nbsp;массовых коммуникаций (Роскомнадзор) 09.12.2015 за номером ИА №ФС77-63848) сопровождаются пометкой &laquo;РБК&raquo;. Иная&nbsp;<a href="#" class="footer__green js-popup-law-link">правовая&nbsp;информация</a>.
+            </div>
+            <div class="footer__td footer__td_50 footer__gray">
+                Чтобы отправить редакции сообщение, выделите часть текста в статье и нажмите Ctrl+Enter            </div>
+            <div class="footer__td footer__td_50 footer__td_last">
+                    <div class="footer__counter">
+        <a href="http://www.liveinternet.ru/click" target=_blank><img src="http://pics.rbc.ru/img/ver99/counter_liveinternet.gif" border=0 width=31 height=31 title="liveinternet.ru"></a>
+    </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="js-popup-law g-zeropixel">
+    <div class="popup__law g-noprint">
+        <div class="popup__law__title">ЗАО &laquo;РОСБИЗНЕСКОНСАЛТИНГ&raquo;</div>
+        <div class="popup__law__text">
+            <div class="popup__law__block">
+                <div class="popup__law__header">Генеральный директор</div>
+                Николай Петрович Молибог
+            </div>
+            <div class="popup__law__block">
+                <div class="popup__law__header">Адрес юридического лица и почтовый адрес</div>
+                Город Москва, улица Профсоюзная, дом 78, строение 1, почтовый индекс 117393
+            </div>
+        </div>
+        <div class="popup__law__bottom">
+            Электронная почта <a href="mailto:law-it@rbc.ru" class="popup__law__link">law-it@rbc.ru</a>, для направления юридически значимых сообщений<br/>и (или) заявлений о нарушении авторских и смежных прав
+                    </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- .l-window -->
+    <div class="js-popup-law g-zeropixel">
+    <div class="popup__law g-noprint">
+        <div class="popup__law__title">ЗАО &laquo;РОСБИЗНЕСКОНСАЛТИНГ&raquo;</div>
+        <div class="popup__law__text">
+            <div class="popup__law__block">
+                <div class="popup__law__header">Генеральный директор</div>
+                Николай Петрович Молибог
+            </div>
+            <div class="popup__law__block">
+                <div class="popup__law__header">Адрес юридического лица и почтовый адрес</div>
+                Город Москва, улица Профсоюзная, дом 78, строение 1, почтовый индекс 117393
+            </div>
+        </div>
+        <div class="popup__law__bottom">
+            Электронная почта <a href="mailto:law-it@rbc.ru" class="popup__law__link">law-it@rbc.ru</a>, для направления юридически значимых сообщений<br/>и (или) заявлений о нарушении авторских и смежных прав
+                    </div>
+    </div>
+</div>    <div class="js-popup-push g-zeropixel">
+    <div class="popup__push g-noprint">
+        <div class="popup__push__title">Оповещения RBC.RU</div>
+        <div class="popup__push__text">Вы можете получать оповещения от RBC.RU в вашем браузере</div>
+        <div><a href="https://app.rbc.ru/gpn/subscribe.html" class="popup__push__button js-popup-push-button">Подписаться</a></div>
+    </div>
+</div>
+
+<div class="js-popup-push-subscribe g-zeropixel">
+    <div class="popup__push g-noprint">
+        <div class="popup__push__title">Оповещения RBC.RU</div>
+        <div class="popup__push__text">Вы можете получать оповещения от RBC.RU в вашем браузере</div>
+        <div>
+            <a href="https://app.rbc.ru/gpn/subscribe.html" class="popup__push__button js-popup-push-subscribe-button-yes">Подписаться</a>
+            <a href="https://app.rbc.ru/gpn/unsubscribe.html" class="popup__push__button popup__push__button_gray js-popup-push-subscribe-button-no">Отменить подписку</a>
+        </div>
+    </div>
+</div>
+    <script src="http://s.rbk.ru/v7_top_static/common/common-4.4.5/scripts/build/_main.js"></script>
+    <script src="http://s.rbk.ru/v7_top_static/rbc7-4.2.17/scripts/build/_main.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"8bff0dff29","applicationID":"18907900","transactionName":"YgcDNUIEDxYHUEVbXFtNNBNZShYSERxHBR1BDRFPQgcCSxRGHl5aVxFOE1IGVkoFRkNAVlsWThFFBw0MBRxYXFdQGk8RWBU=","queueTime":0,"applicationTime":242,"atts":"TkAAQwoeHBg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+<!--Комментарий не убирать!!!-->
+<!-- 834759o8347 -->
